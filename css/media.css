@@ -1,0 +1,5 @@
+@media (min-width: 700px) {
+  .cards-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
