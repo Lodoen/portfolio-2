@@ -3,7 +3,8 @@ body,
   display: grid;
 }
 
-.cards-wrapper {
+.cards-wrapper,
+.about-me-wrapper {
   margin: 0 auto;
   max-width: 800px;
   padding: 25px;
@@ -12,7 +13,8 @@ body,
 }
 
 body,
-h2 {
+.cards-wrapper h2,
+h3 {
   margin: 0;
 }
 
@@ -22,6 +24,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.link,
 .cards-wrapper section a,
 nav ul li a,
 footer a {
@@ -34,13 +37,16 @@ footer {
   margin-top: 30px;
 }
 
-.cards-wrapper h3,
-.cards-wrapper section a {
+.cards-wrapper h4 {
   font-style: italic;
 }
 
 header,
-nav ul li a,
+nav ul li a {
+  color: #fff;
+  background-color: #60536e;
+}
+
 footer,
 footer a {
   color: #fff;
@@ -52,10 +58,12 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.cards-wrapper h1 {
-  grid-column: -1/1;
-  margin-bottom: 0;
+h1 {
   font-size: 2rem;
+}
+
+.cards-wrapper > h2 {
+  grid-column: -1/1;
 }
 
 .cards-wrapper section {
@@ -75,12 +83,14 @@ body {
   border-bottom: 1px solid #272727;
 }
 
-h3 {
+h4 {
   margin: 10px 0 16px;
   font-weight: normal;
 }
 
-.cards-wrapper section a {
+.link {
+  text-decoration: none;
+  font-style: italic;
   color: #0a5485;
 }
 
